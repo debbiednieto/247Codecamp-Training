@@ -4,43 +4,67 @@
 I. Lessons from Git & GitHub Tutorial for Beginners #1 - Why Use Git? (URL: https://www.youtube.com/watch?v=3RjQznt-8kE&list=PL4cUxeGkcC9goXbgTDQ0n_4TBzOO0ocPR)
 
 1. Git helps a developer save a lot of time (stores various versions of a project in a folder)
-2. works on many features without messing up the main codebase (thru branching)
-3. allows collaboration
-4. Edits can be downloaded by various developers and reuploaded with the edits
-5. Atom - an ideal text editor because it's free, cool, and customizable. 
+
+2. Git works on many features without messing up the main codebase (thru branching)
+
+3. Git allows collaboration between/among developers.
+
+4. Edits can be downloaded by various developers and reuploaded with the edits.
+
+5. Atom - an ideal text editor because it's free, cool, and customizable. (Note: This text editor is already sunsetted as of December 2022.)
 
 II. Functions/commands learned from Git & GitHub Tutorial for Beginners #2 - Installing Git (URL: https://www.youtube.com/watch?v=3RjQznt-8kE&list=PL4cUxeGkcC9goXbgTDQ0n_4TBzOO0ocPR)
 Create a text file containing all the functions discussed on the video, and add at least a single sentence to describe each functions you listed.
 
-1."cd .." - This function allows us to change directories 
-e.g. "cd <insert name of directory>" - allows you to go to the particular directory named
-2. ls ("dir" for windows)- lists everything inside a particular directory or folder
-3. mkdir <insert name of directory> - creates a new directory
-4. touch <name of file> (e.g. "touch index.html") 
-- creates a file named index.html within a specified folder
-- only possible with commander or Mac
+1. cd ..
+- This function allows us to change directories 
+e.g. "cd <insert name of directory>" - This allows us to go to the particular directory named.
 
-5. <name of text editor> <name of file> (e.g. Atom index.html) - allows you to open a specified file with the text editor indicated
-6. rm index.html - removes a file
-7. rmdir - removes a directory
+2. ls ("dir" for windows)
+- This enables us to list everything inside a particular directory or folder.
+
+3. mkdir <insert name of directory>" 
+- This allows us to create a new directory.
+
+4. touch <name of file> (e.g. "touch index.html") 
+- This enables us to create a file named index.html within a specified folder.
+(only possible with commander or Mac)
+
+5. <name of text editor> <name of file> (e.g. "Atom index.html") 
+- This enables us to open a specified file with the text editor indicated.
+
+6. rm index.html 
+- removes a file
+
+7. rmdir 
+- removes a directory
+
 
 III. Terms and functions/commands learned from Git & GitHub Tutorial for Beginners #3 - How Git Works (URL: https://www.youtube.com/watch?v=iNP_KmOFqXs&list=PL4cUxeGkcC9goXbgTDQ0n_4TBzOO0ocPR&index=3)
 
-1. repository - alsoe called "repo"
-2. root repository - tracks changes to every single file within it
-3. commit - creates a save point in your project
+1. repository - also called "repo"
 
-4. commit history - allows you to track your work progress through save points and go back to any of them if needed
+2. root repository - tracks changes to every single file within it
+
+3. commit - creates a save point in our project
+
+4. commit history - allows us to track our work progress through save points and go back to any of them if needed
+
 
 IV. Git & GitHub Tutorial for Beginners #4  (URL: https://www.youtube.com/watch?v=v0Ch3yWQ-Zc&list=PL4cUxeGkcC9goXbgTDQ0n_4TBzOO0ocPR&index=4
 
 1. git init - initializes an empty repository inside a chosen folder or a working directory. (Git is going to track any changes done within the initialized project folder.)
 
+
+
 V. Git & GitHub Tutorial for Beginners #5 (URL: https://www.youtube.com/watch?v=KngvG8WzYLU&list=PL4cUxeGkcC9goXbgTDQ0n_4TBzOO0ocPR&index=5)
 
 1. git status - This shows us which files are presently in the staging area and are waiting to be committed
+
 2. git add <name of file> (e.g. "git add index.html") - This allows us to add the specified file to the staging area
+
 3. git rm --cached index.html - removes a file from a staging area
+
 4. git add .- This allows us to add multiple files to the staging area at the same time.
 
 
@@ -55,42 +79,73 @@ VI.  Terms and functions/commands learned from Git & GitHub Tutorial for Beginne
 3. git log --oneline
 - This shows us all of the various commits in our commit history and condense it ine one line. (with the short ID and the message for that id (e.g.  ab4a9c3 added index files)
 
-4.
 
 
 VII. Functions/commands learned fromGit & GitHub Tutorial for Beginners #7 (Rewinding to certain save points and undoing things - URL: https://www.youtube.com/watch?v=RIYrfkZjWmA&list=PL4cUxeGkcC9goXbgTDQ0n_4TBzOO0ocPR&index=7)
 
-1. "git checkout <unique ID>" (e.g. git checkout ab4a9c3)
+1. git checkout <unique ID> (e.g. git checkout ab4a9c3)
 - Called checkout commmit, this command allows us to go back in time while showing the state of each code we have done
 - any changes done here are read-only
 
-2. "git revert <unique ID>" (e.g. git revert ab4a9c3)
+2. git revert <unique ID> (e.g. git revert ab4a9c3)
 Called, revert commit, this command can undo a certain commit.
 
-3. "git reset <unique ID>" (e.g. git reset ab4a9c3)
+3. git reset <unique ID> (e.g. git reset ab4a9c3)
 - Considered the riskiest among the three functions, reset commit allows us to rewind and permanently delete earlier commits
 
 4. git checkout master
 - alows us to check out the master branch
 
 5. shift + :wq + enter 
-- allows us to get out of the screen***
+- This enables us to write and save the commit added ("w") and exit ("q").
 
-6. "git reset <unique ID> --hard"
+6. git reset <unique ID> --hard
 - This allows us to go back to the  specified commit but won't retain any kind of changes from the commit afterwards.
 
 
 VIII. Functions/commands learned from Git & GitHub Tutorial for Beginners #8 (Branching/creating branches - URL: https://www.youtube.com/watch?v=QV0kVNvkMxc&list=PL4cUxeGkcC9goXbgTDQ0n_4TBzOO0ocPR&index=8)
 
-1. 
+1. "git log --oneline" 
+- This allows us to print a commit in a single line as output.
 
-IX.
+2. "git branch <branch name>" (e.g. "git branch feature-1")
+- This creates a new branch.
 
-X. 
 
-XI.
+3. "git branch -a"
+- This allows us to check out all branches
+
+
+4. git checkout branch "<branch name>"  (e.g. git checkout branch "feature-1")
+- This enables us to visit a certain branch.
+
+5. git commit -m "added new feature file"
+- This example allows us to commit a file to a branch.
+
+6. git checkout master 
+- This check outs the master branch.
+
+7. git branch -D feature-1 (e.g. "git branch -d feature-1)
+
+- This enables us to delete a branch.
+
+8. git checkout -b <branch name> (e.g. "git checkout -b feature-1")
+- This creates a branch and checks it out at the same time.
+
+9. git checkout -b feature-b
+- This allows us to work on our own feature.
+
+
+IX. Git & GitHub Tutorial for Beginners #9 Merging feature branches & dealing with conflicts - URL: https://www.youtube.com/watch?v=XX-Kct0PfFc&list=PL4cUxeGkcC9goXbgTDQ0n_4TBzOO0ocPR&index=9)
+
+X. Git & GitHub Tutorial for Beginners #10 (Introduction to Github - URL: https://www.youtube.com/watch?v=fQLK8Ib_SKk&list=PL4cUxeGkcC9goXbgTDQ0n_4TBzOO0ocPR&index=10)
+
+XI. Git & GitHub Tutorial for Beginners #11 (Collaborating on Github - URL: https://www.youtube.com/watch?v=MnUd31TvBoU&list=PL4cUxeGkcC9goXbgTDQ0n_4TBzOO0ocPR&index=11)
 
 XII. Functions/commands learned from Git & GitHub Tutorial for Beginners #12 (Collaborating on Github through forking - URL: https://www.youtube.com/watch?v=HbSjyU2vf6Y&list=PL4cUxeGkcC9goXbgTDQ0n_4TBzOO0ocPR&index=12)
 
-1. git clone https://github.com/debbiednieto/247Codecamp-Training.git
-2. git push origin master 
+1. git clone <URL of repository to be cloned> (e.g. "git clone https://github.com/debbiednieto/247Codecamp-Training.git")
+- This function allows us to clone a chosen repository on GitHub.
+
+2. git push origin <name of master branch> (e.g. "git push origin 
+- This pushes a local branch to a remote repository (e.g. from one's local computer to a repository on GitHub).
